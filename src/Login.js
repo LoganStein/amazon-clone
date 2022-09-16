@@ -10,7 +10,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const signIn = (e) => {
     e.preventDefault();
-    //some fancy firebase login shit
+    //some fancy firebase login stuff
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => history.push("/"))
